@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.android.buffer.smsauth.MainActivity">
+
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/frameLayout">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_logo"
+            android:alpha=".8"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="34dp"
+            android:lineSpacingExtra="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:text="android Buffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <EditText
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/editTextCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:text="@string/text_india_91"
+        android:editable="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintHorizontal_bias="0.503" />
+
+    <EditText
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:hint="@string/hint_your_phone_number"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCode"
+        app:layout_constraintHorizontal_bias="0.503" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/imageViewSend"
+        android:src="@drawable/ic_action_go"
+        android:background="@drawable/round_button"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMsg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMsg"
+        android:padding="16dp"
+        android:textColor="@android:color/secondary_text_dark"
+        android:gravity="center"
+        android:text="We will send you one time password Sms charges may apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

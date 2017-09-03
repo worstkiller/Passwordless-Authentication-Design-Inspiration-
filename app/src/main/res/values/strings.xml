@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sms Auth</string>
+    <string name="text_enter_your_number_here">Enter your number here</string>
+    <string name="text_india_91">INDIA (+91)</string>
+    <string name="hint_your_phone_number">Your Phone Number</string>
+    <string name="text_verification_code">Verification Code</string>
+    <string name="text_enter_code">Please enter the verification code sent to \n %1s</string>
+    <string name="text_phone_valid">Please enter a valid phone no.</string>
+    <string name="button_verify">Verify</string>
+</resources>
